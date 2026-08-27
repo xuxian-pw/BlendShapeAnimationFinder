@@ -1,17 +1,16 @@
 # BlendShape Animation Finder
 
-A Unity **Editor** tool for VRChat avatar creators: find every `AnimationClip` in your
-project that animates a specific BlendShape, then batch-set all of its keyframes to a
-single value — with full **Ctrl+Z** undo support.
+A Unity **Editor** tool for VRChat avatars: find every `AnimationClip` in your project
+that animates a specific BlendShape, then batch-set all of its keyframes to a single
+value — with full **Ctrl+Z** undo support.
 
-The UI is localized in **English / 中文 / 日本語**.
+Support **[English](README.md) / [中文](README.zh.md) / [日本語](README.ja.md)**.
 
 ## Features
 
 - Drag in any `SkinnedMeshRenderer` and pick a BlendShape from a **searchable** dropdown.
 - Scans every `AnimationClip` in the project for curves targeting that BlendShape.
-  Matching is an exact `blendShape.<name>` comparison, so `Smile` never matches
-  `SmileBig`.
+  Matching is an exact `blendShape.<name>` comparison, so `Smile` never matches `SmileBig`.
 - **Batch edit** — set every keyframe to one value, for the selected clips or all clips
   at once, while preserving timing and tangents.
 - **Undo-friendly** — the whole batch is a single Ctrl+Z-able Undo group.
@@ -23,8 +22,8 @@ Choose **one** of the methods below.
 
 ### 1. VCC (VRChat Creator Companion) — recommended for VRChat
 
-Click the button below to open VCC and add this repository, then install the
-package from the package list.
+Click the button below to open VCC and add this repository, then install the package
+from the package list.
 
 [➕ Add to VCC](https://xuxian-pw.github.io/BlendShapeAnimationFinder/)
 
