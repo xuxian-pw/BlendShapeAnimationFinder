@@ -52,13 +52,13 @@ https://raw.githubusercontent.com/xuxian-pw/BlendShapeAnimationFinder/main/vpm.j
 3. Paste:
 
 ```
-https://github.com/xuxian-pw/BlendShapeAnimationFinder.git
+https://github.com/xuxian-pw/BlendShapeAnimationFinder.git?path=Packages/com.xuxian-pw.blendshape-animation-finder
 ```
 
 To pin a specific version, append the tag:
 
 ```
-https://github.com/xuxian-pw/BlendShapeAnimationFinder.git#v1.0.0
+https://github.com/xuxian-pw/BlendShapeAnimationFinder.git?path=Packages/com.xuxian-pw.blendshape-animation-finder#v1.0.0
 ```
 
 ### 3. Unity Package (`.unitypackage`)
@@ -83,7 +83,8 @@ Open **Tools → BlendShape Animation Finder**:
 
 ## Releasing a new version
 
-1. Bump `version` in `package.json`, `vpm.json` and `CHANGELOG.md`.
+1. Bump `version` in `Packages/com.xuxian-pw.blendshape-animation-finder/package.json`,
+   `vpm.json` and `CHANGELOG.md`.
 2. Commit, then tag and push:
 
 ```bash
@@ -98,8 +99,9 @@ git push origin main --tags
 The `.unitypackage` is distributed via GitHub Releases. To (re)build it:
 
 1. Create a folder `Assets/Editor/` in any Unity project.
-2. Copy `Editor/BlendShapeAnimationFinder.cs` and
-   `Editor/BlendShapeAnimationFinder.Editor.asmdef` from this repository into it.
+2. Copy `Packages/com.xuxian-pw.blendshape-animation-finder/Editor/BlendShapeAnimationFinder.cs`
+   and `Packages/com.xuxian-pw.blendshape-animation-finder/Editor/BlendShapeAnimationFinder.Editor.asmdef`
+   from this repository into it.
 3. In the Project window, select both files (their `.meta` files are exported
    automatically).
 4. Right-click → **Export Package…**, untick **Include dependencies**, and save as
