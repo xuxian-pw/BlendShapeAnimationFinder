@@ -42,26 +42,10 @@ Or add the repository manually via **Settings → Packages → Add Repository**:
 https://raw.githubusercontent.com/xuxian-pw/BlendShapeAnimationFinder/main/vpm.json
 ```
 
-> VCC installs this package by cloning the git tag `v1.0.0`, so the tag must exist in
-> the repository before the VCC install link works.
+> The package is distributed as a zip listed in `vpm.json` (with a `zipSHA256`
+> checksum). The zip lives in `dist/`, so it must be committed to the repository.
 
-### 2. Unity Package Manager (UPM) — Git URL
-
-1. In Unity, open **Window → Package Manager**.
-2. Click **+ → Add package from git URL…**.
-3. Paste:
-
-```
-https://github.com/xuxian-pw/BlendShapeAnimationFinder.git?path=Packages/com.xuxian-pw.blendshape-animation-finder
-```
-
-To pin a specific version, append the tag:
-
-```
-https://github.com/xuxian-pw/BlendShapeAnimationFinder.git?path=Packages/com.xuxian-pw.blendshape-animation-finder#v1.0.0
-```
-
-### 3. Unity Package (`.unitypackage`)
+### 2. Unity Package (`.unitypackage`)
 
 1. Open the [Releases](https://github.com/xuxian-pw/BlendShapeAnimationFinder/releases) page.
 2. Download `BlendShapeAnimationFinder.unitypackage`.
@@ -85,14 +69,22 @@ Open **Tools → BlendShape Animation Finder**:
 
 1. Bump `version` in `Packages/com.xuxian-pw.blendshape-animation-finder/package.json`,
    `vpm.json` and `CHANGELOG.md`.
-2. Commit, then tag and push:
+2. Rebuild the `.zip` (see below) and update `url` + `zipSHA256` in `vpm.json`.
+3. Commit, then tag and push:
 
 ```bash
 git tag v1.0.0
 git push origin main --tags
 ```
 
-3. Rebuild the `.unitypackage` (see below) and attach it to a new GitHub Release.
+4. Rebuild the `.unitypackage` (see below) and attach it to a new GitHub Release.
+
+## Building the `.zip`
+
+The `.zip` in `dist/` is what VCC/ALCOM installs. To rebuild it, zip the **contents** of
+`Packages/com.xuxian-pw.blendshape-animation-finder/` (so `package.json` is at the zip
+root) as `com.xuxian-pw.blendshape-animation-finder-<version>.zip`, then set `zipSHA256`
+in `vpm.json` to the file's SHA-256 (lowercase hex).
 
 ## Building the `.unitypackage`
 
