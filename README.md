@@ -26,10 +26,17 @@ Choose **one** of the methods below.
 Click the button below to open VCC and install the package (it adds this
 repository, then opens it for installation).
 
-[⬇️ Install with VCC](vcc://vpm/installRepo?url=https%3A%2F%2Fraw.githubusercontent.com%2Fxuxian-pw%2FBlendShapeAnimationFinder%2Fmain%2Fvpm.json)
+[⬇️ Install with VCC](https://xuxian-pw.github.io/BlendShapeAnimationFinder/)
 
-If the button does not open VCC, copy this URL into
-**Settings → Packages → Add Repository**:
+> GitHub does not render `vcc://` links as clickable, so the button opens a tiny
+> redirect page that launches VCC. If it doesn't work, copy this into your browser
+> address bar and press Enter:
+
+```
+vcc://vpm/installRepo?url=https%3A%2F%2Fraw.githubusercontent.com%2Fxuxian-pw%2FBlendShapeAnimationFinder%2Fmain%2Fvpm.json
+```
+
+Or add the repository manually via **Settings → Packages → Add Repository**:
 
 ```
 https://raw.githubusercontent.com/xuxian-pw/BlendShapeAnimationFinder/main/vpm.json
