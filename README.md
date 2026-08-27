@@ -23,17 +23,17 @@ Choose **one** of the methods below.
 
 ### 1. VCC (VRChat Creator Companion) — recommended for VRChat
 
-Click the button below to open VCC and install the package (it adds this
-repository, then opens it for installation).
+Click the button below to open VCC and add this repository, then install the
+package from the package list.
 
-[⬇️ Install with VCC](https://xuxian-pw.github.io/BlendShapeAnimationFinder/)
+[➕ Add to VCC](https://xuxian-pw.github.io/BlendShapeAnimationFinder/)
 
 > GitHub does not render `vcc://` links as clickable, so the button opens a tiny
 > redirect page that launches VCC. If it doesn't work, copy this into your browser
 > address bar and press Enter:
 
 ```
-vcc://vpm/installRepo?url=https%3A%2F%2Fraw.githubusercontent.com%2Fxuxian-pw%2FBlendShapeAnimationFinder%2Fmain%2Fvpm.json
+vcc://vpm/addRepo?url=https%3A%2F%2Fraw.githubusercontent.com%2Fxuxian-pw%2FBlendShapeAnimationFinder%2Fmain%2Fvpm.json
 ```
 
 Or add the repository manually via **Settings → Packages → Add Repository**:
