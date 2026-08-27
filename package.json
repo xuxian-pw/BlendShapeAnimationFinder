@@ -1,0 +1,25 @@
+{
+  "name": "com.xuxian-pw.blendshape-animation-finder",
+  "version": "1.0.0",
+  "displayName": "BlendShape Animation Finder",
+  "description": "Find every AnimationClip that animates a specific BlendShape, then batch-set all of its keyframes to one value. Editor tool with Ctrl+Z undo. Localized in English, 中文 and 日本語.",
+  "unity": "2019.4",
+  "documentationUrl": "https://github.com/xuxian-pw/BlendShapeAnimationFinder#readme",
+  "license": "MIT",
+  "author": {
+    "name": "XuXian"
+  },
+  "keywords": [
+    "blendshape",
+    "animation",
+    "editor",
+    "vrchat",
+    "avatar",
+    "tool"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xuxian-pw/BlendShapeAnimationFinder.git"
+  },
+  "vpmDependencies": {}
+}
