@@ -10,9 +10,9 @@
 
 1. 拖入一个带 BlendShape 的 `SkinnedMeshRenderer`。
 2. 从下拉框选择一个 BlendShape（可搜索）。
-3. 点击 **Search animations using this BlendShape**。
-4. 勾选要修改的动画（可用 Select All / Invert），输入数值，点击
-   **Modify Selected Keyframes**——或 **Modify All Keyframes** 修改全部结果。
+3. 点击 **搜索修改此 Blend Shape 的动画**。
+4. 勾选要修改的动画（可用`全选`/`反选`），输入数值，点击
+   **修改选中的关键帧**——或 **修改全部关键帧** 修改全部结果。
 5. 随时用 **Ctrl+Z** 撤销。
 
 ## 安装
