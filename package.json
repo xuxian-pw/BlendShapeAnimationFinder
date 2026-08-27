@@ -5,7 +5,7 @@
   "description": "Find every AnimationClip that animates a specific BlendShape, then batch-set all of its keyframes to one value. Editor tool with Ctrl+Z undo. Localized in English, 中文 and 日本語.",
   "unity": "2019.4",
   "documentationUrl": "https://github.com/xuxian-pw/BlendShapeAnimationFinder#readme",
-  "license": "MIT",
+  "license": "AGPL-3.0-or-later",
   "author": {
     "name": "XuXian"
   },

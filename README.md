@@ -100,4 +100,4 @@ The `.unitypackage` is distributed via GitHub Releases. To (re)build it:
 
 ## License
 
-[MIT](LICENSE) © XuXian
+[AGPL-3.0-or-later](LICENSE) © XuXian
