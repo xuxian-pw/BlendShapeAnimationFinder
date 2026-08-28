@@ -51,6 +51,9 @@ The tool is added under **Tools → BlendShape Animation Finder**.
   at once, while preserving timing and tangents.
 - **Undo-friendly** — the whole batch is a single Ctrl+Z-able Undo group.
 
+## **Translation**
+  * **\[10]** — Japanese `README.md` translation
+
 ## License
 
 [AGPL-3.0-or-later](LICENSE) © XuXian

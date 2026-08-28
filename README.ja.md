@@ -1,24 +1,22 @@
 # BlendShape Animation Finder
 
-VRChat 向けのツールです。特定の BlendShape を操作するすべての `AnimationClip` を
-プロジェクトから探し出し、そのすべてのキーフレームを一括で同じ値に変更できます。
+VRChat向けのツール。プロジェクト内にある指定のBlendShapeを変更している `AnimationClip` を全検索し、その全キーフレームの値を一括で指定した数値に変更できます
 
-対応言語: **[English](README.md) / [中文](README.zh.md) / [日本語](README.ja.md)**。
+対応言語: **[English](README.md)** **/** **[中文](README.zh.md)** **/** **[日本語](README.ja.md)**。
 
 ## 使い方
 
-**Tools → BlendShape Animation Finder** を開く：
+`Tools` → `BlendShape Animation Finder` からウィンドウを開きます。
 
-1. BlendShape を持つ `SkinnedMeshRenderer` をドラッグ。
-2. ドロップダウンから BlendShape を選択（検索可能）。
-3. **Search animations using this BlendShape** をクリック。
-4. 変更したいアニメーションにチェックを入れ（Select All / Invert も利用可）、値を入力し、
-   **Modify Selected Keyframes**（または全件なら **Modify All Keyframes**）をクリック。
-5. いつでも **Ctrl+Z** で取り消せます。
+1. BlendShapeを持つ `SkinnedMeshRenderer` をドラッグ＆ドロップします。
+2. ドロップダウン（検索可能）から変更したいBlendShapeを選びます。
+3. **「このBlendShapeを変更しているアニメーションを検索」** をクリックします。
+4. 変更したいアニメーションにチェックを入れ（全選択・反選も可能）、設定したい数値を入力したら **「選択したキーフレームを変更」** をクリックします。（すべての結果を一括変更したい場合は **「すべてのキーフレームを変更」** を押します）
+5. 間違えても `Ctrl+Z` でいつでも元に戻せます。
 
-## インストール
+## **インストール方法**
 
-### 1. VCC（VRChat Creator Companion）—— VRChat では推奨
+### 1. VCC（VRChat Creator Companion）
 
 下のボタンをクリックして VCC を開き、このリポジトリを追加してからパッケージ一覧で
 インストールします。
@@ -34,19 +32,22 @@ https://raw.githubusercontent.com/xuxian-pw/BlendShapeAnimationFinder/main/vpm.j
 ### 2. Unity パッケージ（`.unitypackage`）
 
 1. [Releases](https://github.com/xuxian-pw/BlendShapeAnimationFinder/releases) ページを開く。
-2. `BlendShapeAnimationFinder.unitypackage` をダウンロード。
-3. ダブルクリックしてインポート（または **Assets → Import Package → Custom Package…**）。
+2. `BlendShapeAnimationFinder.unitypackage` をダウンロードします。
+3. ダブルクリックしてインポートします（または Unity 上の `Assets` → `Import Package` → `Custom Package…` から読み込み）。
+4. 上部メニューの `Tools` → `BlendShape Animation Finder` からツールを起動できます。
 
-ツールは **Tools → BlendShape Animation Finder** に追加されます。
+## **主な機能**
 
-## 機能
-
-- `SkinnedMeshRenderer` をドラッグし、**検索可能**なドロップダウンから BlendShape を選択。
-- プロジェクト内のすべての `AnimationClip` から、その BlendShape を操作するカーブを検索。
-  完全一致の `blendShape.<name>` で判定するため、`Smile` が `SmileBig` に誤って一致しません。
-- **一括変更**——選択した（またはすべての）結果のキーフレームを同じ値に変更。時間とタンジェントは保持されます。
-- **取り消し対応**——一括操作は 1 つの Ctrl+Z で取り消せる Undo グループです。
-
-## ライセンス
+* **BlendShapeのスマート検索**：`SkinnedMeshRenderer` をドラッグ＆ドロップするだけで、検索付きドロップダウンからサクッと目的のBlendShapeを選択できます。
+* **正確な判定**：プロジェクト内の全AnimationClipをスキャンし、指定のBlendShapeを変更しているカーブを検出します。`blendShape.<name>` による完全一致判定のため、例えば「Smile」を検索した際に「SmileBig」が誤検知される心配はありません。
+* **一括数値変更**：選択した（またはすべてのアニメーションの）全キーフレームを一括で指定した値に書き換えます。時間軸やタンジェント（補間情報）はそのまま保持されます。
+* **Undo（元に戻す）対応**：一連の一括操作はまとめて1つのUndoグループとして記録されるため、`Ctrl+Z` ワンアクションですぐにやり直せます。
+  
+## **Translation**
+  * **\[10]** — Japanese `README.md` translation
+ 
+ 許可証
+---
 
 [AGPL-3.0-or-later](LICENSE) © XuXian
+

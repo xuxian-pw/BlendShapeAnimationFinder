@@ -45,6 +45,9 @@ https://raw.githubusercontent.com/xuxian-pw/BlendShapeAnimationFinder/main/vpm.j
 - **批量修改**——把选中（或全部）结果的所有关键帧改成同一个值，同时保留时间和切线。
 - **支持撤销**——整批操作是一个 Ctrl+Z 即可撤销的 Undo 组。
 
+## **Translation**
+  * **\[10]** — Japanese `README.md` translation
+
 ## 许可证
 
 [AGPL-3.0-or-later](LICENSE) © XuXian
